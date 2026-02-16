@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você, Meu Amor ❤️</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-background" id="heartsBackground"></div>
+    
+    <!-- Header Section -->
+    <section class="header-section">
+        <div class="container">
+            <div class="header-content">
+                <h1>Nossa História 💕</h1>
+                <p class="subtitle">Uma carta de amor para você...</p>
+                <div class="love-letter">
+                    <p>Meu amor,</p>
+                    <p>Sabe aqueles momentos que a gente para e pensa em como a vida é incrível? Pois é, você é o motivo desses momentos para mim. Cada risada compartilhada, cada olhar trocado, cada momento ao seu lado é um pedaço de paraíso que eu guardo no coração.</p>
+                    <p>Sei que cometi um erro, e quero que saiba que isso me doeu tanto quanto doeu em você. Você merece o melhor do mundo, e eu prometo ser uma versão melhor de mim todos os dias por você.</p>
+                    <p>Este site é mais que um pedido de desculpas - é uma celebração do que temos de mais precioso: nosso amor. Cada seção aqui foi feita pensando em você, em nós, e em tudo que estamos construindo juntos.</p>
+                    <p>Te amo mais que tudo, hoje e sempre.</p>
+                    <p style="text-align: right; font-style: italic; margin-top: 30px;">Com todo meu coração ❤️</p>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="galeria">
+        <div class="container">
+            <h2 class="section-title">Galeria de Momentos ✨</h2>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </section>
+    
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <div class="container">
+            <h2 class="section-title">Quiz do Casal 💑</h2>
+            <div class="quiz-container">
+                <div id="quizContent">
+                    <div class="quiz-question" id="quizQuestion"></div>
+                    <div class="quiz-options" id="quizOptions"></div>
+                    <div class="quiz-result" id="quizResult"></div>
+                </div>
+                <div class="quiz-score" id="quizScore" style="display: none;">
+                    <h3>Resultado Final</h3>
+                    <p id="scoreText"></p>
+                    <button class="btn" onclick="restartQuiz()">Jogar Novamente</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Playlist Section -->
+    <section id="playlist">
+        <div class="container">
+            <h2 class="section-title">Playlist de Vibes 🎵</h2>
+            <div class="playlist-container">
+                <div class="spotify-placeholder">
+                    <i class="fab fa-spotify"></i>
+                    <p>Esse som me lembra de você meu amor</p>
+                </div>
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2hClP5qwCyXUhK2EV56f33?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Canvas Drawing Section -->
+    <section id="colorir">
+        <div class="container">
+            <h2 class="section-title">Colorir Nosso Amor 🎨</h2>
+            <div class="canvas-container">
+                <p style="font-size: 1.2rem; margin-bottom: 20px;">Desenhe o que você quiser, meu amor!</p>
+                <canvas id="drawingCanvas" class="drawing-canvas" width="600" height="600"></canvas>
+                <div class="canvas-controls">
+                    <div class="color-picker">
+                        <div class="color-btn active" style="background: #f43f5e;" data-color="#f43f5e"></div>
+                        <div class="color-btn" style="background: #ec4899;" data-color="#ec4899"></div>
+                        <div class="color-btn" style="background: #a855f7;" data-color="#a855f7"></div>
+                        <div class="color-btn" style="background: #3b82f6;" data-color="#3b82f6"></div>
+                        <div class="color-btn" style="background: #10b981;" data-color="#10b981"></div>
+                        <div class="color-btn" style="background: #f59e0b;" data-color="#f59e0b"></div>
+                    </div>
+                    <button class="btn" onclick="clearCanvas()">Limpar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Book Section -->
+    <section id="livro">
+        <div class="container">
+            <h2 class="section-title">Nosso Livro Digital 📖</h2>
+            <div class="book-container">
+                <div class="book">
+                    <!-- Pages -->
+                    <div class="book-page active" data-page="1">
+                        <div class="book-page-date">Capítulo 1</div>
+                        <h3>O Primeiro Contato</h3>
+                        <p>Tudo começou de um jeito que eu nunca imaginei - você respondeu um stories meu no Instagram sobre Valorant. Quem diria que uma simples resposta ia me conectar com a pessoa mais especial da minha vida? Eu estava lá, só postando sobre o jogo, e do nada você apareceu. Foi como se o universo tivesse conspirado pra gente se conhecer naquele momento exato.</p>
+                        <p>Lembro das primeiras conversas que surgiram daquela resposta, das primeiras calls, dos primeiros jogos juntos. Cada mensagem sua deixava meu dia melhor. Cada risada sua no discord fazia meu coração acelerar. Ali eu já sabia que você era diferente de todo mundo que eu tinha conhecido. Você não era só mais uma pessoa que gostava de Valorant - você era incrível, engraçada, linda e especial de um jeito único. Obrigado por ter respondido aquele stories. ❤️</p>
+                    </div>
+                    
+                    <div class="book-page" data-page="2">
+                        <div class="book-page-date">Capítulo 2</div>
+                        <h3>Quando Ficou Real</h3>
+                        <p>Depois de tanto tempo conversando, jogando e rindo juntos online, chegou o dia que eu mais esperava: te ver pessoalmente. A ansiedade era tanta que parecia que meu coração ia sair pela boca. Mas quando te vi pela primeira vez ao vivo, foi ainda melhor do que imaginei.</p>
+                        <p>Nosso primeiro beijo foi mágico. Aquele momento em que o mundo parou e só existíamos nós dois. Seus lábios nos meus, nossos corações batendo em sincronia, e a certeza de que aquilo era apenas o começo de algo incrível. Desde então, cada beijo seu é uma reafirmação do nosso amor. É a promessa silenciosa de que estaremos juntos sempre.</p>
+                    </div>
+                    
+                    <div class="book-page" data-page="3">
+                        <div class="book-page-date">Capítulo 3</div>
+                        <h3>Nossas Aventuras</h3>
+                        <p>Desde o início, cada momento contigo é uma aventura. Dos nossos dates no shopping experimentando roupas juntos, às noites jogando Valorant até tarde (mesmo quando você me deixava pistola porque você é melhor que eu haha), cada segundo ao seu lado é um tesouro que nunca vou esquecer.</p>
+                        <p>Você transforma os momentos simples em memórias extraordinárias. Um date no cinema vira a melhor experiência do mundo. Um passeio aleatório vira uma jornada épica. Uma call de madrugada vira a melhor parte do meu dia. Tudo é especial quando estou com você, seja online ou pessoalmente.</p>
+                    </div>
+                    
+                    <div class="book-page" data-page="4">
+                        <div class="book-page-date">Capítulo 4</div>
+                        <h3>Crescendo Juntos</h3>
+                        <p>Cada dia ao seu lado me faz uma pessoa melhor. Você me inspira a ser mais gentil, mais paciente, mais compreensivo. Com você, aprendi que o amor verdadeiro não é sobre perfeição, mas sobre aceitar e amar cada imperfeição, cada defeito, cada coisa que nos torna únicos.</p>
+                        <p>Sei que não sou perfeito e que às vezes vacilo. Mas com você aprendi que o mais importante é sempre estar disposto a melhorar, pedir desculpas quando erro e lutar pelo que a gente tem. Nossas brigas nos ensinaram a se comunicar melhor. Nossos erros nos mostraram a importância do perdão. E nossos momentos felizes nos lembraram porque vale a pena lutar por nós todos os dias.</p>
+                    </div>
+                    
+                    <div class="book-page" data-page="5">
+                        <div class="book-page-date">Capítulo 5</div>
+                        <h3>Nosso Futuro</h3>
+                        <p>Quando penso no futuro, sempre te vejo ao meu lado. Sonho com todas as aventuras que ainda teremos juntos - mais dates, mais viagens, mais calls até de madrugada, mais partidas de Valorant (onde você vai continuar me carregando haha), e todos os desafios que vamos superar juntos, mão na mão.</p>
+                        <p>Você é meu presente, meu futuro, minha melhor amiga, minha companheira de jogo, minha pessoa favorita no mundo inteiro. E eu prometo estar aqui, amando você com todo meu coração, sendo o melhor namorado que eu puder ser, hoje, amanhã e sempre. Não importa o que vier, a gente vai estar junto.</p>
+                        <p style="text-align: center; font-size: 2rem; margin-top: 40px;">Te amo infinitamente ∞❤️</p>
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <div class="book-navigation">
+                        <button class="book-nav-btn" id="prevBtn" onclick="previousPage()">
+                            <i class="fas fa-chevron-left"></i> Anterior
+                        </button>
+                        <span class="book-page-indicator">
+                            <span id="currentPage">1</span> / <span id="totalPages">5</span>
+                        </span>
+                        <button class="book-nav-btn" id="nextBtn" onclick="nextPage()">
+                            Próxima <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Feito com <i class="fas fa-heart"></i> para você, meu amor</p>
+        <p style="font-size: 0.9rem; margin-top: 10px; color: var(--text-soft);">
+            Para sempre e sempre <i class="fas fa-infinity"></i>
+        </p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
